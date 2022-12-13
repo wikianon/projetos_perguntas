@@ -7,8 +7,7 @@ class Questionario extends StatelessWidget {
   final int perguntaSelecionada;
   final void Function(int) quantoResponder;
 
-  //Este construtor nao pode ser const pois recebe alteração a cada evento
-  Questionario({
+  const Questionario({super.key, 
     required this.perguntas,
     required this.perguntaSelecionada,
     required this.quantoResponder,
